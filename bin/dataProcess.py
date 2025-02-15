@@ -14,7 +14,7 @@ def process_raw_data(base_path, save_path='./'):
     - 无返回值，但会将处理后的数据保存到指定的文件夹中。
     """
 
-    # 加载原始数据
+    # 加载原始数据集
     # 使用 scipy 的 loadmat 方法读取 .mat 文件，返回一个字典
     # 读取原始数据集 '4u_8n.mat' 中的 "H_gather" 和 "W_gather" 数据
     raw_h = scio.loadmat(os.path.join(base_path, "4u_8n.mat"))["H_gather"]
